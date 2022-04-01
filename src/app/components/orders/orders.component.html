@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-7">
+    <h4>pedido</h4>
+  </div>
+  <div class="col-md-5 text-end">
+    {{order.total | currency:'BRL':'symbol':'1.2-2':'pt'}}
+  </div>
+</div>
+<hr>
+<div class="row mt5" *ngFor="let item of order.pedidoItems">
+  <div class="col-md-1">
+    {{item.quantidade}}
+  </div>
+  <div class="col-md-7">
+    {{item.produto.nome}}
+  </div>
+  <div class="col-md-4 text-end">
+    R$ {{item.produto.preco | currency:'BRL':'symbol':'1.2-2':'pt'}}
+  </div>
+</div>
+
+<div *ngIf="order.total">
+  <hr>
+</div>
+
+<div class="mt-5 col-md-12 text-end">
+  <button class="col-md-4 btn btn-outline-info" (click)="createOrderItem(order)" type="button">Salvar</button>
+</div>

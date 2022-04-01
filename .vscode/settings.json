@@ -1,0 +1,22 @@
+{
+  "window.zoomLevel": 0,
+  "editor.fontSize": 14,
+  "terminal.integrated.fontSize": 12.5,
+  "editor.formatOnSave": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "editor.minimap.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false,
+  "editor.fontFamily": "Fira Code, CaskaydiaCove NF, MesloLGS NF",
+  "editor.fontWeight": "300",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "editor.fontLigatures": "'calt', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'zero', 'onum'",
+  "emmet.includeLanguages":{
+    "javascript": "javascriptreact",
+    "typescript": "typescriptreact"
+  },
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#d19a66",
+  }
+}
